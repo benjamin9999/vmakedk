@@ -1,0 +1,13 @@
+{
+  "volumes": [
+    {"type": "ext4", "label": "c7usr", "mountpoint": "/usr", "size": "8GB", "check": 2},
+    {"type": "ext4", "label": "c7var", "mountpoint": "/var", "size": "8GB", "check": 2},
+    {"type": "ext4", "label": "c7opt", "mountpoint": "/opt", "size": "8GB", "check": 2},
+    {"type": "ext4", "label": "c7home", "mountpoint": "/home", "size": "8GB", "check": 2},
+    {"type": "ext4", "label": "c7root", "mountpoint": "/", "size": "8GB", "check": 1},
+    {"type": "swap", "label": "swap", "size": "256MB"},
+    {"type": "ext4", "label": "build", "mountpoint": "/mnt/tmp", "size": "8GB", "include_in_fstab": false, "check": 0},
+    {"type": "ext4", "label": "rmqdata", "mountpoint": "/mnt/rmqdata", "size": "8GB", "check": 2}
+  ],
+  "exclude": ["build"]
+}
