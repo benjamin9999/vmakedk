@@ -27,9 +27,9 @@ class ProcMounts(object):
     def find(cls, device=None, path=None, fstype=None):
         for mount in cls.objects():
             match = True
-            match &= (path and mount.path == path)
-            match &= (device and mount.device == device)
-            match &= (fstype and mount.fstype == fstype)
+            match &= (path is None or mount.path == path)
+            match &= (device is None or mount.device == device)
+            match &= (fstype is None or mount.fstype == fstype)
             if match:
                 yield mount
 
