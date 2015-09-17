@@ -1,13 +1,13 @@
 {
   "volumes": [
-    {"type": "ext4", "label": "c7usr", "mountpoint": "/usr", "size": "8GB", "check": 2},
-    {"type": "ext4", "label": "c7var", "mountpoint": "/var", "size": "8GB", "check": 2},
-    {"type": "ext4", "label": "c7opt", "mountpoint": "/opt", "size": "8GB", "check": 2},
-    {"type": "ext4", "label": "c7home", "mountpoint": "/home", "size": "8GB", "check": 2},
-    {"type": "ext4", "label": "c7root", "mountpoint": "/", "size": "8GB", "check": 1},
+    {"type": "xfs", "label": "usr", "mountpoint": "/usr", "size": "8GB", "check": 2},
+    {"type": "xfs", "label": "var", "mountpoint": "/var", "size": "8GB", "check": 2},
+    {"type": "xfs", "label": "opt", "mountpoint": "/opt", "size": "8GB", "check": 2},
+    {"type": "xfs", "label": "home", "mountpoint": "/home", "size": "8GB", "check": 2},
+    {"type": "xfs", "label": "root", "mountpoint": "/", "size": "8GB", "check": 1},
     {"type": "swap", "label": "swap", "size": "256MB"},
-    {"type": "ext4", "label": "build", "mountpoint": "/mnt/tmp", "size": "8GB", "include_in_fstab": false, "check": 0},
-    {"type": "ext4", "label": "rmqdata", "mountpoint": "/mnt/rmqdata", "size": "8GB", "check": 2}
+    {"type": "xfs", "label": "build", "mountpoint": "/mnt/tmp", "size": "8GB", "include_in_fstab": false, "check": 0},
+    {"type": "xfx", "label": "data0", "mountpoint": "/mnt/data0", "size": "32GB", "check": 2}
   ],
   "exclude": ["build"]
 }

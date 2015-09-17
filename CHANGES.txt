@@ -1,0 +1,2 @@
+v0.2.0, 2015-09-07 -- Initial release
+v0.2.1, 2015-09-17 -- Prepare for PyPI submission

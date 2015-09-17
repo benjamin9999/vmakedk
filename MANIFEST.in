@@ -1,0 +1,3 @@
+include *.txt
+include example.json
+recursive-include docs *.txt
